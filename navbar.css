@@ -1,18 +1,30 @@
 :root{
     --green:#1DB954; 
     --black:#191414;
-    --font: sans-serif;
+    --font: sans-serif !important;
 }
-
+.body{
+    font-family: var(--font);
+    color: white;
+}
 .sidebar{
     position: fixed ;
     left: 0;
     top: 0;
     width: 365px;
-    background-color: var(--black);
+    background-color: black;
     height: 100%;
+    overflow-x: hidden;
+    font-weight: 750;
+    font-family: var(--font);
+    font-size: large;
+
 
 }
 .main{
     margin-left: 365px;
+}
+
+.logo{
+    width: 240px;
 }

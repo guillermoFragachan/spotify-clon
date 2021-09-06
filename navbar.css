@@ -15,11 +15,21 @@
     background-color: black;
     height: 100%;
     overflow-x: hidden;
-    font-weight: 750;
-    font-family: var(--font);
-    font-size: large;
+    
 
 
+}
+
+.sidebar div ul li a{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.sidebar div ul li a i{
+    margin-right: 1rem;
 }
 .main{
     margin-left: 365px;

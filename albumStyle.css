@@ -34,7 +34,7 @@ body {
 
 .table {
     color: #BAB7BE;
-    margin: 20px 20px 0 20px;
+    margin: 20px 40px 0 20px;
 }
 
 .borderless td, .borderless th {
@@ -47,7 +47,7 @@ td p {
 }
 
 td h6 {
-    color: white;
+    color: #F4F4F4;
     margin: 0;
 }
 

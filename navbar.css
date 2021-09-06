@@ -69,8 +69,11 @@ hr{
     .sidebar {
       display: none;
     }
+    .mainPage{
+        margin-left: 0 !important;
+    }
   }
 
   .mainPage{
-    margin-left: 400px !important;
+    margin-left: 400px;
   }

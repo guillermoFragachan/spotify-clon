@@ -1,5 +1,9 @@
+
+body {
+    background-color: #121212;
+}
 #playButton {
-    background-color: #1DB954;
+    background-color: #1CBB52;
     border: none;
     border-radius: 50%;
     width: 50px;
@@ -11,3 +15,39 @@
     width: 30px;
     height: 30px;
 }
+
+#heartIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 40px;
+    color: #BAB7BE;
+}
+
+#ellipsisIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 40px;
+    color: #BAB7BE;
+}
+
+.table {
+    color: #BAB7BE;
+    margin: 20px 20px 0 20px;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+td p {
+    font-size: 12px;
+    margin: 0;
+}
+
+td h6 {
+    color: white;
+    margin: 0;
+}
+

@@ -3,7 +3,7 @@
 .song-navbar {
   width: 100%;
   height: 10vh;
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(48, 48, 48); /* TO BE CHANGED*/
   position: fixed;
   bottom: 0;
   padding: 15px 15px;
@@ -11,6 +11,8 @@
 
   font-family: sans-serif;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .left-song-nav {
@@ -57,8 +59,20 @@
 }
 
 .song-nav-icons-resize {
-  width: 20px;
-  height: 20px;
+  width: 12px;
+  height: 12px;
+}
+
+.song-nav-icons-resize:hover {
+  filter: 
+   invert(0.28)
+   brightness(1.13);
+}
+
+.song-nav-icons-resize:active {
+  filter:
+   invert(0.4)
+   brightness(1.0);
 }
 
 
@@ -85,6 +99,18 @@
   height: 12px;
 }
 
+.top-part-song-nav img:hover {
+  filter:
+   invert(0.28)
+   brightness(1.13);
+}
+
+.top-part-song-nav img:active {
+  filter:
+   invert(0.4)
+   brightness(1.0);
+}
+
 #middle-icon{
   width: 24px;
   height: 24px;
@@ -103,7 +129,7 @@
 
 .btm-part-song-nav .song-bar-line{
   height: 3px;
-  min-width: 300px;
+  min-width: 400px;
   border-radius: 1.5px;
   background-color: gray;
 }
@@ -111,8 +137,6 @@
 
 /* RIGHT */
 .icons-combo {
-  /* width: 130px; */
-
   display: flex;
   align-items: center;
 }
@@ -121,6 +145,18 @@
   width: 16px;
   height: 16px;
   margin-right: 14px;
+}
+
+.right-song-nav .icons-combo img:hover {
+  filter:
+  invert(0.28)
+  brightness(1.13);
+}
+
+.right-song-nav .icons-combo img:active {
+  filter:
+  invert(0.4)
+  brightness(1.0);
 }
 
 #first-icon {
@@ -134,4 +170,8 @@
   width: 80px;
   border-radius: 2px;
   background-color: white;
+}
+
+.pointer {
+  cursor: pointer;
 }

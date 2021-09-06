@@ -3,9 +3,10 @@
     --black:#191414;
     --font: sans-serif !important;
 }
-.body{
+body{
     font-family: var(--font);
     color: white;
+    background-color: var(--black) !important;
 }
 .sidebar{
     position: fixed ;
@@ -15,6 +16,7 @@
     background-color: black;
     height: 100%;
     overflow-x: hidden;
+    position: fixed;
     
 
 
@@ -53,4 +55,13 @@ hr{
     background-color: grey;
     width: 90%;
     
+}
+.recommended-album{
+    background-color: grey;
+    border-radius: 10px;
+    height: 116px;
+    opacity: 0.5;
+}
+.recommended-album img{
+    opacity: 1;
 }

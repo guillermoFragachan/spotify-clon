@@ -70,3 +70,7 @@ hr{
       display: none;
     }
   }
+
+  .mainPage{
+    margin-left: 400px !important;
+  }

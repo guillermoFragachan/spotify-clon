@@ -70,10 +70,18 @@ hr{
       display: none;
     }
     .mainPage{
-        margin-left: 0 !important;
+        margin-left: 0 ;
     }
   }
 
   .mainPage{
     margin-left: 400px;
+    
   }
+
+  @media screen and (min-width: 2067px) {
+    .mainPage{
+        margin-left: 50px;
+    }
+
+}

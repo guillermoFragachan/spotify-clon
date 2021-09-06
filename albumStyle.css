@@ -51,3 +51,7 @@ td h6 {
     margin: 0;
 }
 
+hr .borderless {
+    background-color: red !important;
+}
+

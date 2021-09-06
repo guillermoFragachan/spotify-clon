@@ -20,7 +20,7 @@
 
 }
 
-.sidebar div ul li a{
+.main-menu ul li a{
     font-size: 24px;
     font-family: sans-serif;
     font-weight: 600;
@@ -28,8 +28,19 @@
     
 }
 
-.sidebar div ul li a i{
+.main-menu ul li a i{
     margin-right: 1rem;
+}
+
+.playlist-menu{
+        width: 300px;
+        height: 50%;
+        font-family: var(--font);
+        font-weight: 600;
+        font-size: 20px;
+        overflow-y: scroll;
+      
+
 }
 .main{
     margin-left: 365px;

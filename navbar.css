@@ -1,0 +1,18 @@
+:root{
+    --green:#1DB954; 
+    --black:#191414;
+    --font: sans-serif;
+}
+
+.sidebar{
+    position: fixed ;
+    left: 0;
+    top: 0;
+    width: 365px;
+    background-color: var(--black);
+    height: 100%;
+
+}
+.main{
+    margin-left: 365px;
+}

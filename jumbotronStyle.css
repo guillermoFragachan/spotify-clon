@@ -8,8 +8,8 @@
   position: absolute;
   right: 0;
   top: 0;
-  height: 300px;
-  width: 75%;
+  /* height: 300px; */
+  width: 80%;
 }
 
 .jumbotron h1 {

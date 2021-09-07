@@ -12,7 +12,7 @@ body{
   position: fixed ;
   left: 0;
   top: 0;
-  width: 365px;
+  width: 20%;
   background-color: black;
   height: 100%;
   overflow-x: hidden;
@@ -20,7 +20,7 @@ body{
 }
 
 .main-menu ul li a{
-  font-size: 24px;
+  font-size: 18px;
   font-family: sans-serif;
   font-weight: 600;
   color: white;

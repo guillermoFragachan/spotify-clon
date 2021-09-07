@@ -1,0 +1,93 @@
+.jumbotron {
+  font-family: sans-serif;
+  
+  background-color: transparent;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+
+.backgroundJ{
+    background-image: url("https://i.ytimg.com/vi/x3aMO8wLNyc/mqdefault.jpg");
+    background-size: cover;
+    background-color: red;
+    font-family: sans-serif;
+    opacity: 0.5;
+    z-index: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 400px;
+    width: 100%;
+
+}
+
+.jumbotron h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 75px;
+    position: relative;
+    top: 90px;
+  
+
+}
+
+.jumbotron .lead {
+    color: white;
+    position: relative;
+    top: 85px;
+    font-size: 15px;
+}
+
+.jumbotron svg {
+    position: relative;
+    top: 105px;
+}
+
+.jumbotron .verify {
+    color: white;
+    display: inline-block;
+    position: relative;
+    top: 105px;
+}
+
+
+
+.mid-menu{
+    z-index: 100;
+    position: absolute;
+    bottom: 50%;
+    font-size: x-large;
+  }
+  
+  #playButton {
+    background-color: #1CBB52;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px 0 0 20px;
+  }
+  
+  #playIcon {
+    width: 30px;
+    height: 30px;
+  }
+  
+  #heartIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 40px;
+    color: white;
+  }
+  
+  #ellipsisIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 40px;
+    color: white;
+  }

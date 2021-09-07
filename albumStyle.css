@@ -25,11 +25,12 @@ body {
     width: 30px;
     height: 30px;
     margin: 20px 0 0 40px;
-    color: #BAB7BE;
+    fill: #BAB7BE;
 }
 
 #heartIcon:hover {
     cursor: pointer;
+    fill: white;
 }
 
 #ellipsisIcon {
@@ -37,11 +38,12 @@ body {
     width: 30px;
     height: 30px;
     margin: 20px 0 0 40px;
-    color: #BAB7BE;
+    fill: #BAB7BE;
 }
 
 #ellipsisIcon:hover {
     cursor: pointer;
+    fill: white;
 }
 
 .table {

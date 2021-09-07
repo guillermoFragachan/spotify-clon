@@ -1,0 +1,57 @@
+
+body {
+    background-color: #121212;
+}
+#playButton {
+    background-color: #1CBB52;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 20px 0 0 20px;
+}
+
+#playIcon {
+    width: 30px;
+    height: 30px;
+}
+
+#heartIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 40px;
+    color: #BAB7BE;
+}
+
+#ellipsisIcon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 20px 0 0 40px;
+    color: #BAB7BE;
+}
+
+.table {
+    color: #BAB7BE;
+    margin: 20px 40px 0 20px;
+}
+
+.borderless td, .borderless th {
+    border: none;
+}
+
+td p {
+    font-size: 12px;
+    margin: 0;
+}
+
+td h6 {
+    color: #F4F4F4;
+    margin: 0;
+}
+
+hr .borderless {
+    background-color: red !important;
+}
+

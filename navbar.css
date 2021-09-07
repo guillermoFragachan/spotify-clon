@@ -1,0 +1,87 @@
+:root{
+    --green:#1DB954; 
+    --black:#191414;
+    --font: sans-serif !important;
+}
+body{
+    font-family: var(--font);
+    color: white;
+    background-color: var(--black) !important;
+}
+.sidebar{
+    position: fixed ;
+    left: 0;
+    top: 0;
+    width: 365px;
+    background-color: black;
+    height: 100%;
+    overflow-x: hidden;
+    position: fixed;
+    
+
+
+}
+
+.main-menu ul li a{
+    font-size: 24px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    
+}
+
+.main-menu ul li a i{
+    margin-right: 1rem;
+}
+
+.playlist-menu{
+        width: 300px;
+        height: 50%;
+        font-family: var(--font);
+        font-weight: 600;
+        font-size: 20px;
+        overflow-y: scroll;
+      
+
+}
+.main{
+    margin-left: 365px;
+}
+
+.logo{
+    width: 240px;
+}
+hr{
+    background-color: grey;
+    width: 90%;
+    
+}
+.recommended-album{
+    background-color: grey;
+    border-radius: 10px;
+    height: 116px;
+    opacity: 0.5;
+}
+.recommended-album img{
+    opacity: 1;
+}
+@media screen and (max-width: 767px) {
+    .sidebar {
+      display: none;
+    }
+    .mainPage{
+        margin-left: 0 ;
+    }
+  }
+
+  .mainPage{
+    margin-left: 400px;
+    
+  }
+
+  @media screen and (min-width: 2067px) {
+    .mainPage{
+        margin-left: 50px;
+    }
+
+}

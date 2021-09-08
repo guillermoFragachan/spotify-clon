@@ -32,9 +32,14 @@ h5{
 svg{
   color: white;
 }
-
+.jumbotron{
+   margin-left: 370px;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
 </style>
-
+<link rel="stylesheet" href="album-jumbotron.css">
 <body>
     <div class="mx-0 px-0 container-fluid overflow-hidden">
       <div class="row">
@@ -164,38 +169,19 @@ svg{
         <!---END SIDEBAR-->
 
 <!-- JUMBOTRON -->
-<div class="container-fluid" style="margin-left: 350px;">
- 
-    <div class="jumbotron">
-
-        
-        <svg class="op" id="leftIcon" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
-        </svg>
-        <svg class="op" id="rightIcon" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
-        </svg>
-  
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            GitMaster26...
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-          </div>
-        </div>
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#367CDB" class="bi bi-patch-check-fill" viewBox="0 0 16 16">
-            <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
-          </svg>
-          <p class="verify">Verified Artist</p>
-          <h1 class="display-4">Queen</h1>
-          <p class="lead">37,120,773 monthly listeners</p>
-          
-    
+<div sytle=""class="jumbotron jumbotron-fluid bg-gradient d-flex align-items-end" >
+  <img src="https://i1.sndcdn.com/artworks-000500823264-7n2dz6-t500x500.jpg" class="shadow" style="width: 200px !important;">
+  <div class="album-jumbotron-description d-inline-block text-light ml-3">
+    <p class="mb-1">ALBUM</p>
+    <h3  class="mb-0">Bohemian Rhapsody (The Original Soundtrack)</h3>
+    <div class="artist-descr-area d-flex mt-2">
+     <span class="artist-icon-sm mr-1"></span>
+     <a href="#" class="text-white" id="exception"><p>Queen</p></a>
+     <p id="title-for-circles">2018</p>
+     <p>22 songs, 1hr 19min</p>
     </div>
-</div>
+  </div>
+ </div>
 
 
 

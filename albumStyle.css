@@ -93,5 +93,6 @@ tr:hover {
 #playing {
     color: #1CBB52;
     margin: 10px 30px 30px 30px;
+    cursor: pointer;
 }
 

@@ -2,7 +2,7 @@
   height: 350px; /* for now - change this as neccesary*/
 }
 
-.jumbotron .album-jumbotron-description {
+.album-jumbotron-description {
   margin: 0;
   padding: 0;
   display: flex;
@@ -15,7 +15,7 @@
 }
 
 .album-jumbotron-description > p{
-  font-size: 10px; 
+  font-size: 11px; 
   font-weight: 600;
 }
 
@@ -31,9 +31,24 @@
   align-items: center;
 }
 
-.artist-descr-area p {
+.artist-descr-area > p{
   margin-bottom: 0;
+  font-size: 14px;
+  color: darkgray;
 }
+
+.artist-descr-area a {
+  color: white;
+  margin-bottom: 0;
+  font-size: 14px;
+  height: 22px;
+}
+
+.artist-descr-area a :hover {
+  color: lightgray(182, 182, 182);
+  text-decoration: underline;
+}
+
 
 .artist-icon-sm {
   width: 20px;
@@ -52,7 +67,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: white;
+  background-color:  darkgray;
   margin: 0 5px;
 }
 
@@ -62,7 +77,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background-color: white;
+  background-color: darkgray;
   margin: 0 5px;
 }
 

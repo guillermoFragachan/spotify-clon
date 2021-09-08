@@ -1,7 +1,26 @@
 
+body {
+    background-color: black;
+}
+
+.body2 {
+    background-color: red;
+}
+
 .jumbotron {
     background-image: url("https://i.ytimg.com/vi/x3aMO8wLNyc/mqdefault.jpg");
     background-size: cover;
+    height: 100%;
+    background-color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 0;
+    border-radius: 0;
+
+  }
+
+  .newJumbotron {
+    background-image: url("https://i.ytimg.com/vi/x3aMO8wLNyc/mqdefault.jpg");
+    background-size: auto;
     height: 100%;
     background-color:black;
     font-family: Arial, Helvetica, sans-serif;
@@ -16,9 +35,9 @@
       font-size: 75px;
       position: relative;
       top: 90px;
-    
-
   }
+
+
 
   .jumbotron .lead {
       color: white;
@@ -136,4 +155,9 @@
 #userDropdown:hover {
     background-color: darkslategray;
 }
+
+
+
+
+
 

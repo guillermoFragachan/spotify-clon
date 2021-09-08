@@ -3,7 +3,7 @@
     background-image: url("https://i.ytimg.com/vi/x3aMO8wLNyc/mqdefault.jpg");
     background-size: cover;
     height: 100%;
-    background-color: red;
+    background-color:black;
     font-family: Arial, Helvetica, sans-serif;
     margin-bottom: 0;
     border-radius: 0;
@@ -64,11 +64,11 @@
 }
 
 .jumbotron .btn {
-    background-color: black;
+    background-color: green;
     border: none;
     border-radius: 20px;
     position: absolute;
-    bottom: 25px;
+    bottom: 20px;
     right: 0;
     padding: 2px 10px 2px 10px;
     font-size: 12px;
@@ -129,4 +129,5 @@
     fill: white;
 }
 
-  
+
+

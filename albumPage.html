@@ -9,13 +9,13 @@
   </head>
   <body>
 
-    <button id="playButton" >
+    <button id="playButton" onclick="play()" >
       <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
         <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
       </svg>
     </button>
 
-    <div id="heartIcon">
+    <div onclick="myFunction(x)" id="heartIcon">
       <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-heart" viewBox="0 0 16 16">
         <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
       </svg>
@@ -30,7 +30,7 @@
 
     <table class="table borderless">
       <thead>
-        <tr>
+        <tr id="headingTrack">
           <th style="width: 2%;" scope="col">#</th>
           <th style="width: 85%;" scope="col">TITLE</th>
           <th scope="col"></th>
@@ -43,7 +43,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr>
+        <tr onclick="changeTrack1()" id="track1">
           <th scope="row" >1</th>
           <td >
             <h6>20th Century Fox Fanfare</h6>
@@ -52,7 +52,7 @@
           <td></td>
           <td>0:25</td>
         </tr>
-        <tr>
+        <tr onclick="changeTrack2()" id="track2">
           <th scope="row">2</th>
           <td>
             <h6>Somebody To Love</h6>
@@ -61,7 +61,7 @@
           <td></td>
           <td>4:55</td>
         </tr>
-        <tr>
+        <tr onclick="changeTrack3()" id="track3">
           <th scope="row">3</th>
           <td>
             <h6>Doing All Right - ...Revisited</h6>
@@ -70,7 +70,7 @@
           <td></td>
           <td>3:16</td>
         </tr>
-        <tr>
+        <tr onclick="changeTrack4()" id="track4">
           <th scope="row">4</th>
           <td>
             <h6>Keep Yourself Alive - Live At The Rainbow</h6>
@@ -79,7 +79,7 @@
           <td></td>
           <td>3:56</td>
         </tr>
-        <tr>
+        <tr onclick="changeTrack5()" id="track5">
           <th scope="row">5</th>
           <td>
             <h6>Killer Queen</h6>
@@ -88,7 +88,7 @@
           <td></td>
           <td>2:59</td>
         </tr>
-        <tr>
+        <tr onclick="changeTrack6()" id="track6">
           <th scope="row">6</th>
           <td>
             <h6>Fat Bottomed Girls</h6>
@@ -97,7 +97,7 @@
           <td></td>
           <td>4:37</td>
         </tr>
-        <tr>
+        <tr onclick="changeTrack7()" id="track7">
           <th scope="row">7</th>
           <td>
             <h6>Bohemian Rhapsody</h6>
@@ -106,7 +106,7 @@
           <td></td>
           <td>5:54</td>
         </tr>
-        <tr>
+        <tr onclick="changeTrack8()" id="track8">
           <th scope="row">8</th>
           <td>
             <h6>Now I'm Here - Live At The Hammersmith Odeon</h6>
@@ -115,7 +115,7 @@
           <td></td>
           <td>4:25</td>
         </tr>
-        <tr>
+        <tr onclick="changeTrack9()" id="track9">
           <th scope="row">9</th>
           <td>
             <h6>Crazy Little Thing Called Love</h6>
@@ -128,9 +128,35 @@
         
       </tbody>
     </table>
+
+
+    <div id="playing">
+
+      <h6>
+      </h6>
+
+
+    </div>
+    
+  
    
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    
+
+   
+    <audio id="audio" src="Queen - 20th Century Fox Fanfare.mp3"></audio>
+    <audio id="audio2" src="Queen - Queen- Somebody to Love.mp3"></audio>
+    <audio id="audio3" src="Smile - Doing All Right (...Revisited).mp3"></audio>
+    <audio id="audio4" src="Queen - Keep Yourself Alive (Live At The Rainbow).mp3"></audio>
+    <audio id="audio5" src="Qeen - Killer Queen.mp3"></audio>
+    <audio id="audio6" src="Queen - Fat Bottomed Girls.mp3"></audio>
+    <audio id="audio7" src="Queen - Bohemian Rhapsody.mp3"></audio>
+    <audio id="audio8" src="Queen - Now I'm Here (Live At The Hammersmith Odeon).mp3"></audio>
+    <audio id="audio9" src="Queen - Crazy Little Thing Call Love.mp3"></audio>
+
+    <script src="albumScript.js"></script>
 
    
   </body>

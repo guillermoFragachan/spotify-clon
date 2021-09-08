@@ -16,12 +16,24 @@ body {
     height: 30px;
 }
 
+
+#playButton:hover {
+    background-color: green;
+}
+
+
 #heartIcon {
     display: inline-block;
     width: 30px;
     height: 30px;
     margin: 20px 0 0 40px;
-    color: #BAB7BE;
+    fill: #BAB7BE;
+}
+
+#heartIcon:hover {
+    cursor: pointer;
+    fill: white;
+
 }
 
 #ellipsisIcon {
@@ -29,7 +41,12 @@ body {
     width: 30px;
     height: 30px;
     margin: 20px 0 0 40px;
-    color: #BAB7BE;
+    fill: #BAB7BE;
+}
+
+#ellipsisIcon:hover {
+    cursor: pointer;
+    fill: white;
 }
 
 .table {
@@ -50,8 +67,3 @@ td h6 {
     color: #F4F4F4;
     margin: 0;
 }
-
-hr .borderless {
-    background-color: red !important;
-}
-

@@ -79,7 +79,9 @@ hr{
     
   }
 
-  
+  .card:hover{
+      
+  }
 
   .play-btn{
     background: var(--green);
@@ -152,4 +154,18 @@ hr{
     border-style: solid;
     border-width: 7px 0 7px 10px;
     border-color: transparent transparent transparent white;
+  }
+
+  .op:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+
+  }
+  .cb{
+    background-color: rgba(255, 255, 255, 0.1);
+
+  }
+
+  .cb:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+
   }

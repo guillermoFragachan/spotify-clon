@@ -31,6 +31,18 @@
       color: #797979;
       font-size: smaller;
     }
+
+    .btn-secondary {
+    background-color: black;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px;
+    border: none;
+    border-radius: 20%/80%;;
+}
+
   </style>
 
 
@@ -167,7 +179,7 @@
       <!---END SIDEBAR-->
 
       <!----Content-->
-      <div class=" col-6  col-lg-6 col-xl-10 mr-0 mainPage">
+      <div class="mr-0 mainPage">
  
         <!-----Recommended albums and playlists-->
 
@@ -180,7 +192,16 @@
       <button type="button" class="btn"><img class="rounded-circle" src="./assets-home/arrow-right.png" alt="arrow right"></button>
     </div>
     <div class="col d-flex justify-content-end">
-      <span class="badge badge-pill badge-dark"> <img src="./assets-home/user.svg" alt="user icon"> Team</span>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          GitMaster26...
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <a class="dropdown-item" href="./album.html">Album</a>
+          <a class="dropdown-item" href="./artist-page.html">Artist</a>
+          <a class="dropdown-item" href="./loginPage.html">Login</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
@@ -218,7 +239,7 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Random song</h5>
+                  <h5 class="card-title">Random </h5>
                   <div class="play-btn "></div>
               </div>
               </div>
@@ -378,8 +399,8 @@
 <p class="mx-4 cardtext">Podcasts we think you´ll get hooked on.</p>
 
 <div style="position: relative;">
-  <button><p class="cardtext" style="position: absolute; right: 20px; top: -35px; font-weight: 600;">
-    <a style="text-decoration: none; color: #f8fafa;" href="#"> SEE ALL</a></p></button>
+  <p class="cardtext" style="position: absolute; right: 20px; top: -35px; font-weight: 600;">
+    <a style="text-decoration: none; color: #f8fafa;" href="#"> SEE ALL</a></p>
 </div>
 
 <div class="container-fluid">

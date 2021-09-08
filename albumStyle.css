@@ -35,9 +35,13 @@ body {
 .table {
     color: #BAB7BE;
     margin: 20px 40px 0 20px;
+    background-color: black;
 }
 
 .borderless td, .borderless th {
+    border: none;
+}
+table, tr, td {
     border: none;
 }
 
@@ -51,7 +55,4 @@ td h6 {
     margin: 0;
 }
 
-hr .borderless {
-    background-color: red !important;
-}
 

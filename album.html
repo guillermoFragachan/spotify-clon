@@ -201,100 +201,146 @@ h5{
 
 <div class="container-fluid" style="margin-left: 360px;  background: rgb(89,89,89);
 background: linear-gradient(180deg, rgba(89,89,89,1) 0%, rgba(18,18,18,1) 35%); ">
-<button class="ml-5" id="playButton">
-      <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
-        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
-      </svg>
-    </button>
 
-   <button class="btn btn btn-outline-light ml-5 py-0">follow</button>
-
-    <div id="ellipsisIcon">
-        <a href="#">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-three-dots" viewBox="0 0 16 16">
-        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
-      </svg></a>
-    </div>
 
 <!-- LEFT PART -->
 
 <div class="row ml-4 mt-4">
     <div class="col col-xl-8">
-        <h5>Popular</h5>
+       
 
     <!-- TABLE -->
+    <button id="playButton" >
+      <svg id="playIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white" class="bi bi-play-fill" viewBox="0 0 16 16">
+        <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+      </svg>
+    </button>
 
-<table class="table table-borderless table-sm text-white smallfont">
-  
-    <tbody>
-      
-      <tr class="op">
+    <div id="heartIcon">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-heart" viewBox="0 0 16 16">
+        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01L8 2.748zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143c.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15z"/>
+      </svg>
+    </div>
+
+    <div id="ellipsisIcon">
+      <svg xmlns="http://www.w3.org/2000/svg" class="bi bi-three-dots" viewBox="0 0 16 16">
+        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+      </svg>
+    </div>
+
+
+    <table class="table borderless">
+      <thead>
+        <tr>
+          <th style="width: 2%;" scope="col">#</th>
+          <th style="width: 85%;" scope="col">TITLE</th>
+          <th scope="col"></th>
+          <th scope="col">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16" style="margin-inline-start: 15px;">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" >1</th>
+          <td >
+            <h6>20th Century Fox Fanfare</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>0:25</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <h6>Somebody To Love</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>4:55</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <h6>Doing All Right - ...Revisited</h6>
+            <p >Smile</p>
+          </td>
+          <td></td>
+          <td>3:16</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            <h6>Keep Yourself Alive - Live At The Rainbow</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>3:56</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>
+            <h6>Killer Queen</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>2:59</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>
+            <h6>Fat Bottomed Girls</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>4:37</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>
+            <h6>Bohemian Rhapsody</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>5:54</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>
+            <h6>Now I'm Here - Live At The Hammersmith Odeon</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>4:25</td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>
+            <h6>Crazy Little Thing Called Love</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>2:43</td>
+        </tr>
         
-        <td>1<img style="max-height: 40px;" class="mx-2" src="./assets/placeholder_small.png" alt="album">Another One Bites The Dust - Remasterd 2011</td>
-        <td style="padding-top: 10px; color: #969696">1,013,238,772</td>
-        <td style="padding-top: 10px; color: #969696">3:34</td>
-       
-      </tr>
-      <tr class="op">
         
-        <td>2<img style="max-height: 40px;" class="mx-2" src="./assets/placeholder_small.png" alt="album">Bohemian Rhapsody - Remasterd 2011</td>
-        <td style="padding-top: 10px; color: #969696;">1,513,254,712</td>
-        <td style="padding-top: 10px; color: #969696">5:54</td>
-       
-      </tr>
-      <tr class="op">
-        
-        <td>3<img style="max-height: 40px;" class="mx-2" src="./assets/placeholder_small.png" alt="album">Don't Stop Me Now - Remasterd 2011</td>
-        <td style="padding-top: 10px; color: #969696">1,133,238,772</td>
-        <td style="padding-top: 10px; color: #969696">3:29</td>
-       
-      </tr>
-      <tr class="op">
-        
-        <td>4<img style="max-height: 40px;" class="mx-2" src="./assets/placeholder_small.png" alt="album">Under Pressure - Remasterd 2011</td>
-        <td style="padding-top: 10px; color: #969696">1,913,238,892</td>
-        <td style="padding-top: 10px; color: #969696">3:34</td>
-       
-      </tr>
-      <tr class="op">
-        
-        <td>5<img style="max-height: 40px;" class="mx-2" src="./assets/placeholder_small.png" alt="album">We Will Rock You - Remasterd 2011</td>
-        <td style="padding-top: 10px; color: #969696">1,755,099,423</td>
-        <td style="padding-top: 10px; color: #969696">2:02</td>
-       
-      </tr>
-    
-    </tbody>
-  </table>
+      </tbody>
+    </table>
   <a class="text-decoration-none" href="#"> <p class="ml-4 text-secondary" style="font-size: small;"><b>SEE MORE</b></p></a>
 
 
  <!-- RIGHT PART -->
 
     </div>
-    <div class="col ml-3 d-none d-xl-block">
-        <h5>Artist pick</h5>
-        <div class="card mb-3 op" style="max-width: 250px; max-height: 65px;">
-                <div class="row">
-                  <div class="col-md-4">
-                    <img style="max-height: 65px;" src="./assets-home/placeholder.png" alt="Playlist">
-                  </div>
-                  <div class="col-md-8">
-                    <div class="card-body p-0">
-                        <p style="margin-bottom: 0px; color: gray; font-size: smaller;">Posted By Queen</p>
-                      <h6 style="margin-bottom: 0px; color: white;">Queen Best Of</h6>
-                      <p style="color: gray; font-size: smaller;">Playlist</p>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            
+
+</div>
+</div>
+
+      </div>
     </div>
-</div>
-<h5 class="ml-5 mt-2 mb-5">Popular releases</h5>
-</div>
-
-
 <!-- PLAYER BOTTOM -->
 <div class="container-fluid">
 <div class="song-navbar">

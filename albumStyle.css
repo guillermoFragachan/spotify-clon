@@ -16,9 +16,11 @@ body {
     height: 30px;
 }
 
+
 #playButton:hover {
     background-color: green;
 }
+
 
 #heartIcon {
     display: inline-block;
@@ -31,6 +33,7 @@ body {
 #heartIcon:hover {
     cursor: pointer;
     fill: white;
+
 }
 
 #ellipsisIcon {
@@ -64,4 +67,3 @@ td h6 {
     color: #F4F4F4;
     margin: 0;
 }
-

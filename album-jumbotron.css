@@ -2,6 +2,11 @@
   height: 350px; /* for now - change this as neccesary*/
 }
 
+.bg-gradient {
+  background: rgb(203,24,191);
+  background: linear-gradient(180deg, rgba(203,24,191,1) 0%, rgba(132,16,125,0.6909138655462185) 72%, rgba(0,0,0,0.2455357142857143) 100%);  
+}
+
 .album-jumbotron-description {
   margin: 0;
   padding: 0;
@@ -34,7 +39,7 @@
 .artist-descr-area > p{
   margin-bottom: 0;
   font-size: 14px;
-  color: darkgray;
+  color: rgb(211, 211, 211);
 }
 
 .artist-descr-area a {

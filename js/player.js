@@ -70,6 +70,8 @@ function changeNavbar(){
 
 function volume(event){
   let audio = document.getElementById('audio')
+  //  audio.play()
+
   let volume = event.target.value /100;
   console.log(volume)
   audio.volume = volume;

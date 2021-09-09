@@ -12,11 +12,12 @@ body {
   position: fixed;
   left: 0;
   top: 0;
-  width: 365px;
+  width: 280px;
   background-color: black;
   height: 100%;
   overflow-x: hidden;
   position: fixed;
+  z-index: 1;
 }
 
 .main-menu ul li a {
@@ -31,7 +32,7 @@ body {
 }
 
 .playlist-menu {
-  width: 300px;
+  width: 220px;
   height: 50%;
   font-family: var(--font);
   font-weight: 400;
@@ -39,7 +40,7 @@ body {
   overflow-y: scroll;
 }
 .main {
-  margin-left: 365px;
+  margin-left: 280px;
 }
 
 .logo {
@@ -58,17 +59,17 @@ hr {
 .recommended-album img {
   opacity: 1;
 }
-@media screen and (max-width: 767px) {
+/* @media screen and (max-width: 767px) {
   .sidebar {
     display: none;
   }
   .mainPage {
     margin-left: 0;
   }
-}
+} */
 
 .mainPage {
-  margin-left: 400px;
+  margin-left: 280px;
 }
 
 /* .card:hover{
@@ -152,4 +153,8 @@ hr {
 
 .cb:hover {
   background-color: rgba(255, 255, 255, 0.5);
+}
+
+.firstlogo {
+  width: 150px;
 }

@@ -1,10 +1,4 @@
-const setPlayerSong = (song) => {
-  audio.src = song.preview;
-  playIcon.src = "playerbutton.png";
-  setPlayerInfos(song);
-  window.localStorage.setItem("songId", song.id);
-  audio.play();
-}
+
 
 
 //set function that play audio on clikc 
@@ -14,3 +8,14 @@ const setPlayerSong = (song) => {
 //progress bar
 
 
+//Pause <i class="bi bi-pause-fill"></i>
+
+
+function pausePlay () {
+  let playButton = document.getElementById('middle-icon')
+  let pauseButton= document.createElement('i')
+  pauseButton.classList.add('bi', 'bi-pause-fill')
+  
+  playButton.parentNode.replaceChild(pauseButton, playButton)
+  
+}

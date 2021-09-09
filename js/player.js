@@ -41,13 +41,22 @@ function pausePlay () {
 
 function playOnClick(){
     let nodeAlbum = document.getElementsByClassName('card')[0]
-    console.log(nodeAlbum)
-    nodeAlbum.addEventListener('click', play())
-
+    nodeAlbum.addEventListener('click', function(e) { console.log('this');})
+    //add play audio function from john
 }
+
+
+function changeNavbar(){
+  let nodeAlbum = document.getElementById('album').children[0]
+  let nodeAlbumNavbar = document.getElementsByClassName('left-song-nav')[0].children[0]
+
+  nodeAlbumNavbar.parentNode.replaceChild(nodeAlbum, nodeAlbumNavbar)
+  console.log(nodeAlbum)
+}
+
 
 window.onload = function(){
   playOnClick()
-
+changeNavbar()
 
 }

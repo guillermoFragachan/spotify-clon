@@ -50,8 +50,8 @@ function changeNavbar(){
   let nodeAlbum = document.getElementById('album').children[0]
   let nodeAlbumNavbar = document.getElementsByClassName('left-song-nav')[0].children[0]
 
-  nodeAlbumNavbar.parentNode.replaceChild(nodeAlbum, nodeAlbumNavbar)
-  console.log(nodeAlbum)
+  nodeAlbumNavbar.src= nodeAlbum.src
+  console.log(nodeAlbum.src)
 }
 
 

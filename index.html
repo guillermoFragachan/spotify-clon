@@ -110,7 +110,7 @@
             <!---Song lists-->
 
             <div class=" playlist-menu mt-4 " id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="playlist_list">
                 <li class="nav-item the-list-item">
 
                   <a class="nav-link active" aria-current="page" href="#">
@@ -465,8 +465,17 @@
 <!-- MODAL -->
   <div class="modal-container" id="modal_container">
     <div class="modal">
-      <h1>Modals are cool</h1>
-      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      <div class="d-flex">
+        <div class="playlist-img"></div>
+      <div class="playlist-inner-text">
+        <p>PLAYLIST</p>
+        <h1>My Playlist</h1>
+        <input type="text" id="playlistName">
+        <div class="user-icon"></div>
+        <p>User Name</p>
+      </div>
+      </div>
+      <div class="close-btn" id="add" onclick="addPlaylist()">ADD</div>
       <div class="close-btn" id="close">CLOSE</div>
     </div>
   </div>

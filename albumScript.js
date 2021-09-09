@@ -1,78 +1,205 @@
 
-
-
-function changeTrack1() {
-    let audio = document.getElementById("audio");
-    audio.play();
-    document.getElementById("track1").style.backgroundColor="darkSlateGray";
+function playAudio() { 
+    document.getElementById("audio").play(); 
+    document.getElementById("playTrack").style.backgroundColor="green";
+    document.getElementById("pauseTrack").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>20th Century Fox Fanfare (Queen)</strong>";
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track1").style.backgroundColor="darkSlateGray";
+} 
+
+function pauseAudio() { 
+    document.getElementById("audio").pause(); 
+    document.getElementById("pauseTrack").style.backgroundColor="green";
+    document.getElementById("playTrack").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
     document.getElementById("stopIcon").style.fill="#1CBB52";
-}
+} 
 
-
-function changeTrack2() {
-    let audio = document.getElementById("audio2");
-    audio.play();
-    document.getElementById("track2").style.backgroundColor="darkSlateGray";
+function playAudio2() { 
+    document.getElementById("audio2").play(); 
+    document.getElementById("playTrack2").style.backgroundColor="green";
+    document.getElementById("pauseTrack2").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Somebody To Love (Queen)</strong>";
-    document.getElementById("stopIcon").style.fill="#1CBB52";
-}
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track2").style.backgroundColor="darkSlateGray";
+} 
 
-function changeTrack3() {
-    let audio = document.getElementById("audio3");
-    audio.play();
-    document.getElementById("track3").style.backgroundColor="darkSlateGray";
+function pauseAudio2() { 
+    document.getElementById("audio2").pause(); 
+    document.getElementById("pauseTrack2").style.backgroundColor="green";
+    document.getElementById("playTrack2").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
+    document.getElementById("stopIcon").style.fill="#1CBB52";
+} 
+
+function playAudio3() { 
+    document.getElementById("audio3").play(); 
+    document.getElementById("playTrack3").style.backgroundColor="green";
+    document.getElementById("pauseTrack3").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Doing All Right - ...Revisited (Smile)</strong>";
-    document.getElementById("stopIcon").style.fill="#1CBB52";
-}
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track3").style.backgroundColor="darkSlateGray";
+} 
 
-function changeTrack4() {
-    let audio = document.getElementById("audio4");
-    audio.play();
-    document.getElementById("track4").style.backgroundColor="darkSlateGray";
+function pauseAudio3() { 
+    document.getElementById("audio3").pause(); 
+    document.getElementById("pauseTrack3").style.backgroundColor="green";
+    document.getElementById("playTrack3").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
+    document.getElementById("stopIcon").style.fill="#1CBB52";
+} 
+
+function playAudio4() { 
+    document.getElementById("audio4").play(); 
+    document.getElementById("playTrack4").style.backgroundColor="green";
+    document.getElementById("pauseTrack4").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Keep Yourself Alive - Live At The Rainbow (Queen)</strong>";
-    document.getElementById("stopIcon").style.fill="#1CBB52";
-}
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track4").style.backgroundColor="darkSlateGray";
+} 
 
-function changeTrack5() {
-    let audio = document.getElementById("audio5");
-    audio.play();
-    document.getElementById("track5").style.backgroundColor="darkSlateGray";
+function pauseAudio4() { 
+    document.getElementById("audio4").pause(); 
+    document.getElementById("pauseTrack4").style.backgroundColor="green";
+    document.getElementById("playTrack4").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
+    document.getElementById("stopIcon").style.fill="#1CBB52";
+} 
+
+function playAudio5() { 
+    document.getElementById("audio5").play(); 
+    document.getElementById("playTrack5").style.backgroundColor="green";
+    document.getElementById("pauseTrack5").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Killer Queen (Queen)</strong>";
-    document.getElementById("stopIcon").style.fill="#1CBB52";
-}
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track5").style.backgroundColor="darkSlateGray";
+} 
 
-function changeTrack6() {
-    let audio = document.getElementById("audio6");
-    audio.play();
-    document.getElementById("track6").style.backgroundColor="darkSlateGray";
+function pauseAudio5() { 
+    document.getElementById("audio5").pause(); 
+    document.getElementById("pauseTrack5").style.backgroundColor="green";
+    document.getElementById("playTrack5").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
+    document.getElementById("stopIcon").style.fill="#1CBB52";
+} 
+
+function playAudio6() { 
+    document.getElementById("audio6").play(); 
+    document.getElementById("playTrack6").style.backgroundColor="green";
+    document.getElementById("pauseTrack6").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Fat Bottomed Girls (Queen)</strong>";
-    document.getElementById("stopIcon").style.fill="#1CBB52";
-}
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track6").style.backgroundColor="darkSlateGray";
+} 
 
-function changeTrack7() {
-    let audio = document.getElementById("audio7");
-    audio.play();
-    document.getElementById("track7").style.backgroundColor="darkSlateGray";
+function pauseAudio6() { 
+    document.getElementById("audio6").pause(); 
+    document.getElementById("pauseTrack6").style.backgroundColor="green";
+    document.getElementById("playTrack6").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
+    document.getElementById("stopIcon").style.fill="#1CBB52";
+} 
+
+function playAudio7() { 
+    document.getElementById("audio7").play(); 
+    document.getElementById("playTrack7").style.backgroundColor="green";
+    document.getElementById("pauseTrack7").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Bohemian Rhapsody (Queen)</strong>";
-    document.getElementById("stopIcon").style.fill="#1CBB52";
-}
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track7").style.backgroundColor="darkSlateGray";
+} 
 
-function changeTrack8() {
-    let audio = document.getElementById("audio8");
-    audio.play();
-    document.getElementById("track8").style.backgroundColor="darkSlateGray";
+function pauseAudio7() { 
+    document.getElementById("audio7").pause(); 
+    document.getElementById("pauseTrack7").style.backgroundColor="green";
+    document.getElementById("playTrack7").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
+    document.getElementById("stopIcon").style.fill="#1CBB52";
+} 
+
+function playAudio8() { 
+    document.getElementById("audio8").play(); 
+    document.getElementById("playTrack8").style.backgroundColor="green";
+    document.getElementById("pauseTrack8").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Now I'm Here - Live At The Hammersmith Odeon (Queen)</strong>";
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track8").style.backgroundColor="darkSlateGray";
+} 
+
+function pauseAudio8() { 
+    document.getElementById("audio8").pause(); 
+    document.getElementById("pauseTrack8").style.backgroundColor="green";
+    document.getElementById("playTrack8").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
     document.getElementById("stopIcon").style.fill="#1CBB52";
+} 
+
+function playAudio9() { 
+    document.getElementById("audio9").play(); 
+    document.getElementById("playTrack9").style.backgroundColor="green";
+    document.getElementById("pauseTrack9").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Crazy Little Thing Called Love (Queen)</strong>";
+    document.getElementById("stopIcon").style.fill="#121212";
+    document.getElementById("track9").style.backgroundColor="darkSlateGray";
+} 
+
+function pauseAudio9() { 
+    document.getElementById("audio9").pause(); 
+    document.getElementById("pauseTrack9").style.backgroundColor="green";
+    document.getElementById("playTrack9").style.backgroundColor="#1CBB52";
+    document.getElementById("playingText").innerHTML = "PAUSED";
+    document.getElementById("stopIcon").style.fill="#1CBB52";
+} 
+
+function favourite1() {
+    document.getElementById("heart1").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
 }
 
-function changeTrack9() {
-    let audio = document.getElementById("audio9");
-    audio.play();
-    document.getElementById("track9").style.backgroundColor="darkSlateGray";
-    document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>Crazy Little Thing Called Love (Queen)</strong>";
-    document.getElementById("stopIcon").style.fill="#1CBB52";
+function favourite2() {
+    document.getElementById("heart2").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
 }
+
+function favourite3() {
+    document.getElementById("heart3").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
+}
+
+function favourite4() {
+    document.getElementById("heart4").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
+}
+
+function favourite5() {
+    document.getElementById("heart5").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
+}
+
+function favourite6() {
+    document.getElementById("heart6").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
+}
+
+function favourite7() {
+    document.getElementById("heart7").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
+}
+
+function favourite8() {
+    document.getElementById("heart8").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
+}
+
+function favourite9() {
+    document.getElementById("heart9").style.fill = "white";
+    setTimeout(function(){ alert("Added to Favourites"); });
+}
+
+
+
+
 
 
 

@@ -18,6 +18,8 @@ function pausePlay () {
 
   let parentArray = document.getElementsByClassName('top-part-song-nav')[0]
 
+  let audio = document.getElementById('audio')
+
 
   let newB = document.createElement('i')
   newB.classList.add('bi-play-fill', 'bi')
@@ -28,6 +30,8 @@ function pausePlay () {
   if (parentArray.children[2]!==playButton){
     
     parentArray.replaceChild(newB, btnSelector)
+    
+
 
 
   }else if(parentArray.children[2].classList==='bi-play-fill'){
@@ -35,15 +39,12 @@ function pausePlay () {
   }
   else{
     playButton.parentNode.replaceChild(pauseButton, playButton)
+    audio.play()
 
   }
 }
 
-function playOnClick(){
-    let nodeAlbum = document.getElementsByClassName('card')[0]
-    //nodeAlbum.addEventListener('click', function(e) { console.log('this');})
-    //add play audio function from john
-}
+
 
 
 function changeNavbar(){
@@ -57,6 +58,7 @@ function changeNavbar(){
  
 
   parentAlbum.addEventListener('click', change )
+  parentAlbum.addEventListener('click', pausePlay)
 
   function change(){
     nodeAlbumNavbar.src= nodeAlbum.src
@@ -81,13 +83,15 @@ function volume(event){
   
 }
 
+
+//mute function
+
 //skip functon
 
 
 //extra progress bar
 
 window.onload = function(){
-  playOnClick()
   changeNavbar()
 
 }

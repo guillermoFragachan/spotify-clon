@@ -19,13 +19,14 @@ const openModal = function () {
 const addPlaylist = function() {
   liNode = document.createElement("li")
   liNode.classList.add("nav-item")
-  liNode.appendChild(document.createTextNode(playlistName.value))
-  playlisyList.appendChild(liNode)
 
+  playlisyList.appendChild(liNode)
+  
   const innerLinkNode = document.createElement("a")
   innerLinkNode.classList.add("nav-link")
   innerLinkNode.setAttribute("href", "#")
   liNode.appendChild(innerLinkNode)
-  
-  innerLinkNode
+
+  const playlistNameValue = liNode.appendChild(document.createTextNode(playlistName.value))
+  innerLinkNode.appendChild(playlistNameValue)
 }

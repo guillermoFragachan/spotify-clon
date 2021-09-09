@@ -22,14 +22,19 @@ function pausePlay () {
 
 
   let newB = document.createElement('i')
+  
+
   newB.classList.add('bi-play-fill', 'bi')
   newB.setAttribute('id', 'middle-icon')
+  
   let btnSelector = document.getElementsByClassName('bi-pause-fill')[0]
-
 
   if (parentArray.children[2]!==playButton){
     
     parentArray.replaceChild(newB, btnSelector)
+    audio.pause()
+    
+    document.getElementsByClassName('bi-play-fill')[0].setAttribute("onclick", 'pausePlay()')
     
 
 
@@ -40,6 +45,8 @@ function pausePlay () {
   else{
     playButton.parentNode.replaceChild(pauseButton, playButton)
     audio.play()
+    document.getElementsByClassName('bi-pause-fill')[0].setAttribute("onclick", 'pausePlay()')
+
 
   }
 }
@@ -100,6 +107,12 @@ function mute(){
   }
 }
 
+function skip(){
+  let audioArray = document.getElementsByTagName('audio')
+  
+
+  console.log(audioArray)
+}
 //skip functon
 
 

@@ -195,11 +195,14 @@
             <div class="row">
               <div class="col-md-4" id="album">
                 <img src="./assets-home/placeholder.png" alt="...">
+                <audio id="audio" src="./Queen - Bohemian Rhapsody.mp3"></audio>
+
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title" id="title">Card title</h5>
                   <div class="play-btn "></div>
+
 
               </div>
               </div>
@@ -441,7 +444,7 @@
     <img src="https://i.scdn.co/image/ab67616d0000b27358aa659299939bc52a2dbc22" alt="Group 'Queen' album cover" class="song-nav-img-resize">
     <div class="text-and-icons">
       <div class="text-description">
-        <a href="#"> <h5>Another One Bites The Dust - Remastered 2011</h5> </a>
+        <a href="#"> <h5 id="navTitle">Another One Bites The Dust - Remastered 2011</h5> </a>
         <a href="#"> <p>Queen</p> </a>
       </div>
       <div class="song-nav-icons">
@@ -470,7 +473,8 @@
       <img src="spotify-icons/list.png" id="first-icon" class="pointer">
       <img src="spotify-icons/responsive.png" class="pointer">
       <img src="spotify-icons/audio.png" class="pointer">
-      <div class="volume-line pointer"></div>
+      <input  class="volume-line pointer" type="range" value="50" onchange="volume(event)">
+      
     </div>
   </div>
 </div>

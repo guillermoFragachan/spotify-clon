@@ -41,22 +41,51 @@ function pausePlay () {
 
 function playOnClick(){
     let nodeAlbum = document.getElementsByClassName('card')[0]
-    nodeAlbum.addEventListener('click', function(e) { console.log('this');})
+    //nodeAlbum.addEventListener('click', function(e) { console.log('this');})
     //add play audio function from john
 }
 
 
 function changeNavbar(){
-  let nodeAlbum = document.getElementById('album').children[0]
-  let nodeAlbumNavbar = document.getElementsByClassName('left-song-nav')[0].children[0]
 
-  nodeAlbumNavbar.src= nodeAlbum.src
-  console.log(nodeAlbum.src)
+
+  let nodeAlbum = document.getElementById('album').children[0]
+
+
+  let nodeAlbumNavbar = document.getElementsByClassName('left-song-nav')[0].children[0]
+  let parentAlbum = document.getElementById('album').parentElement
+ 
+
+  parentAlbum.addEventListener('click', change )
+
+  function change(){
+    nodeAlbumNavbar.src= nodeAlbum.src
+    console.log(parentAlbum)
+    document.getElementById('navTitle').innerHTML=document.getElementById('title').innerHTML
+  }
+  
+  
 }
 
 
+function volume(event){
+  let audio = document.getElementById('audio')
+  let volume = event.target.value /100;
+  console.log(volume)
+  audio.volume = volume;
+
+
+
+  
+}
+
+//skip functon
+
+
+//extra progress bar
+
 window.onload = function(){
   playOnClick()
-changeNavbar()
+  changeNavbar()
 
 }

@@ -84,7 +84,21 @@ function volume(event){
 }
 
 
+
 //mute function
+function mute(){
+  let audio = document.getElementById('audio')
+  let iconNode = document.getElementById('mute')
+  
+  if (audio.volume != 0){
+    audio.volume = 0
+    iconNode.src='./spotify-icons/mute.png'
+  }else{
+    audio.volume = 1
+    iconNode.src='./spotify-icons/audio.png'
+
+  }
+}
 
 //skip functon
 

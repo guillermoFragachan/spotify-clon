@@ -15,7 +15,30 @@ function pausePlay () {
   let playButton = document.getElementById('middle-icon')
   let pauseButton= document.createElement('i')
   pauseButton.classList.add('bi', 'bi-pause-fill')
-  
-  playButton.parentNode.replaceChild(pauseButton, playButton)
+
+  let parentArray = document.getElementsByClassName('top-part-song-nav')[0]
+
+
+  let newB = document.createElement('i')
+  newB.classList.add('bi-play-fill', 'bi')
+  newB.setAttribute('id', 'middle-icon')
+  let btnSelector = document.getElementsByClassName('bi-pause-fill')[0]
+
+
+  if (parentArray.children[2]!==playButton){
+    
+    parentArray.replaceChild(newB, btnSelector)
+
+
+  }else if(parentArray.children[2].classList==='bi-play-fill'){
+    console.log('try')
+  }
+  else{
+    playButton.parentNode.replaceChild(pauseButton, playButton)
+
+  }
+}
+
+function playOnClick(){
   
 }

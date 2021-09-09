@@ -20,7 +20,7 @@ body {
 }
 
 .main-menu ul li a {
-  font-size: 24px;
+  font-size: 18px;
   font-family: sans-serif;
   font-weight: 600;
   color: white;
@@ -34,8 +34,8 @@ body {
   width: 300px;
   height: 50%;
   font-family: var(--font);
-  font-weight: 600;
-  font-size: 20px;
+  font-weight: 400;
+  font-size: 16px;
   overflow-y: scroll;
 }
 .main {

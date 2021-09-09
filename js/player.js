@@ -40,5 +40,14 @@ function pausePlay () {
 }
 
 function playOnClick(){
-  
+    let nodeAlbum = document.getElementsByClassName('card')[0]
+    console.log(nodeAlbum)
+    nodeAlbum.addEventListener('click', play())
+
+}
+
+window.onload = function(){
+  playOnClick()
+
+
 }

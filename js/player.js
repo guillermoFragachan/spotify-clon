@@ -140,8 +140,13 @@ function realtime(){
   let inputNode = document.getElementById('pb') 
   let seekPosition = 0;
   
+ //set total duration
+ let totalDurationNode = document.getElementById('totalduration')
+ totalDurationNode.innerHTML= Math.floor(audio.duration/60) + ':'+ Math.floor(audio.duration)
 
-  if (!isNaN(audio.duration)) {
+ totalDurationNode.innerHTML.substr(-2)
+ 
+ if (!isNaN(audio.duration)) {
     seekPosition = audio.currentTime * (100 / audio.duration)
     inputNode.value = seekPosition
 
@@ -150,13 +155,23 @@ function realtime(){
 
     
   }
+  let currentTimeNode = document.getElementById('currentDuration')
+  let minutes = "0" + Math.floor(audio.currentTime / 60)
+  let seconds = "0" + Math.floor(audio.currentTime)
+  currentTimeNode.innerText = minutes.substr(-2) + ":" + seconds.substr(-2)
 
 
+  
+ 
 }
+
+//update minutes
+// query currentDuration
+
 
 window.onload = function(){
   changeNavbar()
   progress()
   
-  setInterval(realtime, 100)
+  setInterval(realtime, 1)
 }

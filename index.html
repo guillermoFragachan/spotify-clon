@@ -14,6 +14,7 @@
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="song-nav.css">
+  <link rel="stylesheet" href="createPlaylist.css">
   <style>
     body {
       background: rgb(63,7,6);
@@ -114,7 +115,7 @@ h5.card-title{
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
 
-                  <a class="nav-link " aria-current="page" href="#">
+                  <a class="nav-link" aria-current="page" href="#" onclick="openModal()" id="open">
                     <i class="bi bi-plus-square"></i>
                     Create playlist
                   </a>
@@ -135,8 +136,8 @@ h5.card-title{
             <!---Song lists-->
 
             <div class=" playlist-menu mt-4 " id="navbarSupportedContent">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="playlist_list">
+                <li class="nav-item the-list-item">
 
                   <a class="nav-link active" aria-current="page" href="#">
                     The Bachelor Ends
@@ -375,9 +376,8 @@ h5.card-title{
       </div>
       </div>
     </div>
-  </a>
+ </a>
   </div>
-
 
 </div>
 
@@ -601,6 +601,35 @@ h5.card-title{
   </div>
 </div>
 
+<!-- MODAL -->
+  <div class="modal-container" id="modal_container">
+    <div class="modal">
+      <div class="d-flex">
+        <div class="playlist-img"></div>
+      <div class="playlist-inner-text">
+        <p>PLAYLIST</p>
+        <h1>My Playlist</h1>
+        <input type="text" id="playlistName">
+        <div class="user-icon"></div>
+        <p>User Name</p>
+      </div>
+      </div>
+      <div class="close-btn" id="add" onclick="addPlaylist()">ADD</div>
+      <div class="close-btn" id="close">CLOSE</div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="addPlaylist.js"></script>
   <!-- jQuery and Bootstrap Bundle (includes Popper) -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"

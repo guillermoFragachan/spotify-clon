@@ -62,9 +62,10 @@
 }
 
 .underJumbotron {
-  background-color: #444444;
+  /* background-color: rgba(66, 66, 66, 0.2); */
   margin: 0;
-  padding: 5px;
+  padding-left: 15px;
+  margin-top: -20px;
 }
 
 .pauseButton {

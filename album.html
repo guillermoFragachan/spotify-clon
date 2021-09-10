@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
 <meta charset="UTF-8">
 <title>Album page</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -11,8 +12,14 @@
 <link rel="stylesheet" href="./navbar.css">
 <link rel="stylesheet" href="./jumbotronStyle.css">
 <link rel="stylesheet" href="./albumStyle.css">
+<link rel="stylesheet" href="album-jumbotron.css">
 
 <style>
+  body{
+    background: rgb(95,33,76);
+background: linear-gradient(180deg, rgba(95,33,76,1) 20%, rgba(18,18,18,1) 55%) !important;
+  }
+
      .op {
       background-color: rgba(255, 255, 255, 0);
     }
@@ -33,13 +40,30 @@ svg{
   color: white;
 }
 .jumbotron{
-   margin-left: 370px;
+   margin-left: 280px;
     margin-right: 0;
     width: 100%;
     margin-bottom: 0;
 }
+
+td p,
+td,
+th {
+  font-size: 13px;
+  margin: 0;
+  color: #969696;
+}
+
+td h6 {
+  color: #f4f4f4;
+  margin: 0;
+  font-size: medium !important;
+}
+
 </style>
-<link rel="stylesheet" href="album-jumbotron.css">
+
+</head>
+
 <body>
     <div class="mx-0 px-0 container-fluid overflow-hidden">
       <div class="row">
@@ -47,16 +71,16 @@ svg{
           <!----SIDEBAR-->
   
   
-          <nav class=" sidebar flex-column fixed-left navbar-dark">
+          <nav class=" sidebar flex-column fixed-left navbar-dark mb-5 pb-5">
             <div class="container ml-3 ">
-              <a class="navbar-brand my-4 logo " href="#">
-                <img src="./assets/Spotify_Logo_RGB_White.png" class="img-fluid " alt="">
+              <a class="navbar-brand my-4 logo " href="./index.html">
+                <img src="./assets/Spotify_Logo_RGB_White.png" class="firstlogo" alt="">
               </a>
               <div class=" main-menu " id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li class="nav-item">
   
-                    <a class="nav-link active" aria-current="page" href="#">
+                    <a class="nav-link active" aria-current="page" href="./index.html">
                       <i class="bi bi-house-door-fill"></i>
                       Home
                     </a>
@@ -148,10 +172,10 @@ svg{
   
   
               <!---install app-->
-              <div class="main-menu ml-0 mt-5">
+              <div class="main-menu ml-0 mb-5 mt-3">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                   <li>
-                    <a href="">
+                    <a href=""class="text-secondary">
                       <i class="bi bi-arrow-down-circle"></i>
                       Install App
                     </a>
@@ -169,8 +193,16 @@ svg{
         <!---END SIDEBAR-->
 
 <!-- JUMBOTRON -->
-<div sytle=""class="jumbotron jumbotron-fluid bg-gradient d-flex align-items-end" >
-  <img src="https://i1.sndcdn.com/artworks-000500823264-7n2dz6-t500x500.jpg" class="shadow" style="width: 200px !important;">
+<div sytle=""class="jumbotron jumbotron-fluid bg-gradient d-flex align-items-end">
+
+  <svg class="op" id="leftIcon" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  </svg>
+  <svg class="op" id="rightIcon" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </svg>
+
+  <img src="https://i1.sndcdn.com/artworks-000500823264-7n2dz6-t500x500.jpg" class="shadow ml-5" style="width: 200px !important;">
   <div class="album-jumbotron-description d-inline-block text-light ml-3">
     <p class="mb-1">ALBUM</p>
     <h3  class="mb-0">Bohemian Rhapsody (The Original Soundtrack)</h3>
@@ -188,7 +220,7 @@ svg{
 
 <!-- PLAYLIST MAIN-->
 
-<div class="container-fluid" style="margin-left: 360px;   ">
+<div class="container-fluid" style="margin-left: 277px;   ">
 
 
 <!-- LEFT PART -->
@@ -212,14 +244,14 @@ svg{
     </div>
 
 
-    <table class="table borderless">
+    <table class="table borderless mb-5">
       <thead>
         <tr>
           <th  scope="col">#</th>
           <th  scope="col">TITLE</th>
           <th scope="col"></th>
           <th scope="col">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16" style="margin-inline-start: 15px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#969696" class="bi bi-clock" viewBox="0 0 16 16" style="margin-inline-start: 10px;">
               <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
               <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
             </svg>

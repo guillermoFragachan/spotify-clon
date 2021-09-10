@@ -3,12 +3,12 @@
 .song-navbar {
   width: 100%;
   height: 10vh;
-  background-color: rgb(48, 48, 48); /* TO BE CHANGED*/
+  background-color: #191919; /* TO BE CHANGED*/
   position: fixed;
   bottom: 0;
   padding: 15px 15px;
   margin: 0;
-
+  z-index: 2;
   font-family: sans-serif;
   display: flex;
   align-items: center;

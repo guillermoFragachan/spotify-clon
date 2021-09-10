@@ -142,8 +142,8 @@ function realtime(){
   
 
   if (!isNaN(audio.duration)) {
-    seekPosition = audio.currentTime * (100 / audio.duration);
-    inputNode.value = seekPosition;
+    seekPosition = audio.currentTime * (100 / audio.duration)
+    inputNode.value = seekPosition
 
 
     

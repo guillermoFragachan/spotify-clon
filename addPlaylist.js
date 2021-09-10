@@ -25,10 +25,9 @@ const addPlaylist = function(name) {
   const innerLinkNode = document.createElement("a")
   innerLinkNode.classList.add("nav-link")
   innerLinkNode.setAttribute("href", "#")
-  innerLinkNode.innerHTML=name
+  
   liNode.prepend(innerLinkNode)
 
-
   const playlistNameValue = liNode.appendChild(document.createTextNode(playlistName.value))
-  innerLinkNode.prepend(playlistNameValue)
+
 }

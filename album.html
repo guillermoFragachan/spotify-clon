@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Album page</title>
+
+ <!-- FAVICON -->
+ <link rel = "icon" href = 
+ "https://cdn3.iconfinder.com/data/icons/popular-services-brands/512/spotify-512.png" 
+         type = "image/x-icon">
+
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+<link rel="stylesheet" href="./song-nav.css">
+<link rel="stylesheet" href="./navbar.css">
+<link rel="stylesheet" href="./jumbotronStyle.css">
+<link rel="stylesheet" href="./albumStyle.css">
+<link rel="stylesheet" href="album-jumbotron.css">
+
+<style>
+  body{
+    background: rgb(95,33,76);
+background: linear-gradient(180deg, rgba(95,33,76,1) 20%, rgba(18,18,18,1) 55%) !important;
+  }
+
+     .op {
+      background-color: rgba(255, 255, 255, 0);
+    }
+
+    .op:hover{
+        cursor: pointer;
+        background-color: rgba(95, 15, 15, 0.2);
+    }
+
+h5{
+    color: white;
+}
+
+.smallfont{
+    font-size: smaller;
+}
+svg{
+  color: white;
+}
+.jumbotron{
+   margin-left: 280px;
+    margin-right: 0;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+td p,
+td,
+th {
+  font-size: 13px;
+  margin: 0;
+  color: #969696;
+}
+
+td h6 {
+  color: #f4f4f4;
+  margin: 0;
+  font-size: medium !important;
+}
+
+</style>
+
+</head>
+
+<body>
+    <div class="mx-0 px-0 container-fluid overflow-hidden">
+      <div class="row">
+        <div class="col-2">
+          <!----SIDEBAR-->
+  
+  
+          <nav class=" sidebar flex-column fixed-left navbar-dark mb-5 pb-5">
+            <div class="container ml-3 ">
+              <a class="navbar-brand my-4 logo " href="./index.html">
+                <img src="./assets/Spotify_Logo_RGB_White.png" class="firstlogo" alt="">
+              </a>
+              <div class=" main-menu " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+  
+                    <a class="nav-link active" aria-current="page" href="./index.html">
+                      <i class="bi bi-house-door-fill"></i>
+                      Home
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-search"></i>
+                      Search
+                    </a>
+                  </li>
+  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-music-note-list"></i>
+                      Your library
+                    </a>
+  
+                  </li>
+                </ul>
+  
+              </div>
+  
+  
+  
+  
+              <!---PLay lists-->
+              <div class=" main-menu mt-5 " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+  
+                    <a class="nav-link " aria-current="page" href="#">
+                      <i class="bi bi-plus-square"></i>
+                      Create playlist
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      <i class="bi bi-caret-right-square"></i>
+                      Liked songs
+                    </a>
+                  </li>
+  
+  
+                </ul>
+  
+              </div>
+  
+              <hr class="ml-0 mt-5 mb-0">
+              <!---Song lists-->
+  
+              <div class=" playlist-menu mt-4 " id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+  
+                    <a class="nav-link active" aria-current="page" href="#">
+                      The Bachelor Ends
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Fun At Snacks
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Girls' Snacks
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Summer Whoop
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Modern Hall
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                      Room For Ends
+                    </a>
+                  </li>
+  
+  
+                </ul>
+  
+              </div>
+  
+  
+              <!---install app-->
+              <div class="main-menu ml-0 mb-5 mt-3">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li>
+                    <a href=""class="text-secondary">
+                      <i class="bi bi-arrow-down-circle"></i>
+                      Install App
+                    </a>
+                  </li>
+                </ul>
+              </div>
+  
+            </div>
+          </nav>
+        </div>
+  
+        
+        
+  
+        <!---END SIDEBAR-->
+
+<!-- JUMBOTRON -->
+<div sytle=""class="jumbotron jumbotron-fluid bg-gradient d-flex align-items-end">
+
+  <svg class="op" id="leftIcon" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chevron-left" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  </svg>
+  <svg class="op" id="rightIcon" xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+  </svg>
+
+  <img src="https://i1.sndcdn.com/artworks-000500823264-7n2dz6-t500x500.jpg" class="shadow ml-5" style="width: 200px !important;">
+  <div class="album-jumbotron-description d-inline-block text-light ml-3">
+    <p class="mb-1">ALBUM</p>
+    <h3  class="mb-0">Bohemian Rhapsody (The Original Soundtrack)</h3>
+    <div class="artist-descr-area d-flex mt-2">
+     <span class="artist-icon-sm mr-1"></span>
+     <a href="#" class="text-white" id="exception"><p>Queen</p></a>
+     <p id="title-for-circles">2018</p>
+     <p>22 songs, 1hr 19min</p>
+    </div>
+  </div>
+ </div>
+
+
+
+
+<!-- PLAYLIST MAIN-->
+
+<div class="container-fluid" style="margin-left: 277px;   ">
+
+
+<!-- LEFT PART -->
+
+<div class="row  mt-0">
+    <div class="col-12">
+       
+
+    <!-- TABLE -->
+    <div class="underJumbotron ml-1">
+      <svg class="pauseButton" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+        <path d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"></path>
+      </svg>
+      <button type="button" class="btn btn-secondary">FOLLOW</button>
+
+      <svg class="ellipsisIcon2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+        <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"></path>
+      </svg>
+
+
+    </div>
+
+
+    <table class="table borderless mb-5">
+      <thead>
+        <tr>
+          <th  scope="col">#</th>
+          <th  scope="col">TITLE</th>
+          <th scope="col"></th>
+          <th scope="col">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#969696" class="bi bi-clock" viewBox="0 0 16 16" style="margin-inline-start: 10px;">
+              <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+              <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+            </svg>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" >1</th>
+          <td >
+            <h6>20th Century Fox Fanfare</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>0:25</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td>
+            <h6>Somebody To Love</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>4:55</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td>
+            <h6>Doing All Right - ...Revisited</h6>
+            <p >Smile</p>
+          </td>
+          <td></td>
+          <td>3:16</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td>
+            <h6>Keep Yourself Alive - Live At The Rainbow</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>3:56</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td>
+            <h6>Killer Queen</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>2:59</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td>
+            <h6>Fat Bottomed Girls</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>4:37</td>
+        </tr>
+        <tr>
+          <th scope="row">7</th>
+          <td>
+            <h6>Bohemian Rhapsody</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>5:54</td>
+        </tr>
+        <tr>
+          <th scope="row">8</th>
+          <td>
+            <h6>Now I'm Here - Live At The Hammersmith Odeon</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>4:25</td>
+        </tr>
+        <tr>
+          <th scope="row">9</th>
+          <td>
+            <h6>Crazy Little Thing Called Love</h6>
+            <p >Queen</p>
+          </td>
+          <td></td>
+          <td>2:43</td>
+        </tr>
+        
+        
+      </tbody>
+    </table>
+   
+
+
+ <!-- RIGHT PART -->
+
+    </div>
+
+</div>
+</div>
+
+      </div>
+    </div>
+
+<!-- PLAYER BOTTOM -->
+<div class="container-fluid pl-0">
+<div class="song-navbar">
+    <div class="left-song-nav">
+      <img src="https://i.scdn.co/image/ab67616d0000b27358aa659299939bc52a2dbc22" alt="Group 'Queen' album cover" class="song-nav-img-resize">
+      <div class="text-and-icons">
+        <div class="text-description">
+          <a href="#"> <h5>Another One Bites The Dust - Remastered 2011</h5> </a>
+          <a href="#"> <p>Queen</p> </a>
+        </div>
+        <div class="song-nav-icons">
+          <img src="spotify-icons/heart.svg" class="song-nav-icons-resize pointer">
+        </div>
+      </div>
+    </div>
+  
+    <div class="middle-song-nav">
+      <div class="top-part-song-nav">
+        <img src="spotify-icons/shuffle.png" class="pointer">
+        <img src="spotify-icons/previous-2.png" class="pointer">
+        <img src="spotify-icons/play-button.png" id="middle-icon" class="pointer">
+        <img src="spotify-icons/previous-3.png" class="pointer">
+        <img src="spotify-icons/loop.png" class="pointer">
+      </div>
+      <div class="btm-part-song-nav">
+        <p>0:12</p>
+        <span class="song-bar-line pointer"></span>
+        <p>3:34</p>
+      </div>
+    </div>
+  
+    <div class="right-song-nav">
+      <div class="icons-combo" >
+        <img src="spotify-icons/list.png" id="first-icon" class="pointer">
+        <img src="spotify-icons/responsive.png" class="pointer">
+        <img src="spotify-icons/audio.png" class="pointer">
+        <div class="volume-line pointer"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"></script>
+  
+  
+
+</body>
+</html> 

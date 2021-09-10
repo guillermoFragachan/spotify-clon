@@ -142,7 +142,7 @@ function realtime(){
   
  //set total duration
  let totalDurationNode = document.getElementById('totalduration')
- totalDurationNode.innerHTML= Math.floor(audio.duration/60) + ':'+ Math.floor(audio.duration /10)
+ totalDurationNode.innerHTML= Math.floor(audio.duration/60) + ':'+ Math.floor(audio.duration)
 
  totalDurationNode.innerHTML.substr(-2)
  

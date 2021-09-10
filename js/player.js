@@ -1,5 +1,6 @@
 //set function that play audio on clikc 
 
+
 //set function that change the player with the audio
 
 //progress bar
@@ -124,15 +125,37 @@ function progress(){
   let audio = document.getElementById('audio')
   let inputNode = document.getElementById('pb') 
 
-  let seekto = audio.duration * (inputNode.value / 100);
+  let update = audio.duration * (inputNode.value / 100);
   
   // Set the current track position to the calculated seek position
-  audio.currentTime = seekto;
+  audio.currentTime = update;
+
+
+  
+  
+}
+
+function realtime(){
+  let audio = document.getElementById('audio')
+  let inputNode = document.getElementById('pb') 
+  let seekPosition = 0;
+
+  if (!isNaN(audio.duration)) {
+    seekPosition = audio.currentTime * (100 / audio.duration);
+    inputNode.value = seekPosition;
+
+
+    
+
+    
+  }
+
+
 }
 
 window.onload = function(){
   changeNavbar()
-  handleProgressBarUpdate()
-  
+  progress()
+  realtime()
 
 }

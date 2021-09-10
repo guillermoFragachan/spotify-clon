@@ -1,4 +1,7 @@
 
+
+
+
 function playAudio() { 
     document.getElementById("audio").play(); 
     document.getElementById("playTrack").style.backgroundColor="green";
@@ -196,23 +199,6 @@ function favourite9() {
     document.getElementById("heart9").style.fill = "white";
     setTimeout(function(){ alert("Added to Favourites"); });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

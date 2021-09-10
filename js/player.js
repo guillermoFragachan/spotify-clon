@@ -139,6 +139,7 @@ function realtime(){
   let audio = document.getElementById('audio')
   let inputNode = document.getElementById('pb') 
   let seekPosition = 0;
+  
 
   if (!isNaN(audio.duration)) {
     seekPosition = audio.currentTime * (100 / audio.duration);
@@ -156,6 +157,6 @@ function realtime(){
 window.onload = function(){
   changeNavbar()
   progress()
-  realtime()
-
+  
+  setInterval(realtime, 100)
 }

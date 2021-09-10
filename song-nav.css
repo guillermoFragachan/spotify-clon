@@ -3,12 +3,12 @@
 .song-navbar {
   width: 100%;
   height: 10vh;
-  background-color: #191919; /* TO BE CHANGED*/
+  background-color: rgb(48, 48, 48); /* TO BE CHANGED*/
   position: fixed;
   bottom: 0;
   padding: 15px 15px;
   margin: 0;
-  z-index: 2;
+
   font-family: sans-serif;
   display: flex;
   align-items: center;
@@ -37,7 +37,7 @@
 }
 
 .left-song-nav .text-description h5 {
-  font-size: 12px;
+  font-size: 12px;  
   margin-bottom: 0;
 }
 
@@ -53,6 +53,7 @@
   height: 50px;
 }
 
+
 .song-nav-icons {
   margin-left: 10px;
 }
@@ -63,12 +64,19 @@
 }
 
 .song-nav-icons-resize:hover {
-  filter: invert(0.28) brightness(1.13);
+  filter: 
+   invert(0.28)
+   brightness(1.13);
 }
 
 .song-nav-icons-resize:active {
-  filter: invert(0.4) brightness(1);
+  filter:
+   invert(0.4)
+   brightness(1.0);
 }
+
+
+
 
 /* MIDDLE */
 .middle-song-nav {
@@ -77,7 +85,7 @@
   align-items: center;
 }
 
-.middle-song-nav .top-part-song-nav {
+.middle-song-nav .top-part-song-nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -92,14 +100,18 @@
 }
 
 .top-part-song-nav img:hover {
-  filter: invert(0.28) brightness(1.13);
+  filter:
+   invert(0.28)
+   brightness(1.13);
 }
 
 .top-part-song-nav img:active {
-  filter: invert(0.4) brightness(1);
+  filter:
+   invert(0.4)
+   brightness(1.0);
 }
 
-#middle-icon {
+#middle-icon{
   width: 24px;
   height: 24px;
 }
@@ -115,12 +127,13 @@
   font-size: 10px;
 }
 
-.btm-part-song-nav .song-bar-line {
+.btm-part-song-nav .song-bar-line{
   height: 3px;
   min-width: 400px;
   border-radius: 1.5px;
   background-color: gray;
 }
+
 
 /* RIGHT */
 .icons-combo {
@@ -135,11 +148,15 @@
 }
 
 .right-song-nav .icons-combo img:hover {
-  filter: invert(0.28) brightness(1.13);
+  filter:
+  invert(0.28)
+  brightness(1.13);
 }
 
 .right-song-nav .icons-combo img:active {
-  filter: invert(0.4) brightness(1);
+  filter:
+  invert(0.4)
+  brightness(1.0);
 }
 
 #first-icon {

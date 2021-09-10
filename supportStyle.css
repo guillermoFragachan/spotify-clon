@@ -2,7 +2,8 @@
 
 
 #help {
-    background-color: #2D46B9 ;
+    background-image: url("bubbles.webp");
+    background-size: cover;
     padding: 75px;
     text-align: center;
 }
@@ -91,4 +92,30 @@
     text-align: left;
 }
 
+#navLogo {
+    width: 150px;
+    margin-left: 150px;
+    padding: 12px;
+}
 
+#navLogo:hover {
+    cursor: pointer;
+}
+
+#navbar {
+    background-color: black !important;
+}
+
+#navbarNav {
+    margin-left: 550px;
+}
+
+#listItem {
+    color: white !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    padding: 0 20px 0 20px;
+}
+
+#listItem:hover {
+    color: #1FD662 !important;
+}

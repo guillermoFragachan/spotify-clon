@@ -1,6 +1,3 @@
-
-
-
 //set function that play audio on clikc 
 
 //set function that change the player with the audio
@@ -107,6 +104,9 @@ function mute(){
   }
 }
 
+let songIndex = 0
+
+
 function skip(){
   let audioArray = document.getElementsByTagName('audio')
   
@@ -116,9 +116,23 @@ function skip(){
 //skip functon
 
 
+
 //extra progress bar
+
+
+function progress(){
+  let audio = document.getElementById('audio')
+  let inputNode = document.getElementById('pb') 
+
+  let seekto = audio.duration * (inputNode.value / 100);
+  
+  // Set the current track position to the calculated seek position
+  audio.currentTime = seekto;
+}
 
 window.onload = function(){
   changeNavbar()
+  handleProgressBarUpdate()
+  
 
 }

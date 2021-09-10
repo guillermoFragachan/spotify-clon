@@ -1,17 +1,30 @@
 
+function stopSongs() {
+    let songSelector = document.getElementsByTagName('audio')
+    for (let i = 0; i < songSelector.length; i++) {
+        songSelector[i].pause()
+        
+    }
+
+}
+
 
 
 
 function playAudio() { 
+    
+    stopSongs()
     document.getElementById("audio").play(); 
     document.getElementById("playTrack").style.backgroundColor="green";
     document.getElementById("pauseTrack").style.backgroundColor="#1CBB52";
     document.getElementById("playingText").innerHTML = "NOW PLAYING: <strong>20th Century Fox Fanfare (Queen)</strong>";
     document.getElementById("stopIcon").style.fill="#121212";
     document.getElementById("track1").style.backgroundColor="darkSlateGray";
+    
 } 
 
 function pauseAudio() { 
+    stopSongs()
     document.getElementById("audio").pause(); 
     document.getElementById("pauseTrack").style.backgroundColor="green";
     document.getElementById("playTrack").style.backgroundColor="#1CBB52";
@@ -20,6 +33,7 @@ function pauseAudio() {
 } 
 
 function playAudio2() { 
+    stopSongs()
     document.getElementById("audio2").play(); 
     document.getElementById("playTrack2").style.backgroundColor="green";
     document.getElementById("pauseTrack2").style.backgroundColor="#1CBB52";
@@ -29,6 +43,7 @@ function playAudio2() {
 } 
 
 function pauseAudio2() { 
+    stopSongs()
     document.getElementById("audio2").pause(); 
     document.getElementById("pauseTrack2").style.backgroundColor="green";
     document.getElementById("playTrack2").style.backgroundColor="#1CBB52";
@@ -37,6 +52,7 @@ function pauseAudio2() {
 } 
 
 function playAudio3() { 
+    stopSongs()
     document.getElementById("audio3").play(); 
     document.getElementById("playTrack3").style.backgroundColor="green";
     document.getElementById("pauseTrack3").style.backgroundColor="#1CBB52";
@@ -46,6 +62,7 @@ function playAudio3() {
 } 
 
 function pauseAudio3() { 
+    stopSongs()
     document.getElementById("audio3").pause(); 
     document.getElementById("pauseTrack3").style.backgroundColor="green";
     document.getElementById("playTrack3").style.backgroundColor="#1CBB52";
@@ -54,6 +71,7 @@ function pauseAudio3() {
 } 
 
 function playAudio4() { 
+    stopSongs()
     document.getElementById("audio4").play(); 
     document.getElementById("playTrack4").style.backgroundColor="green";
     document.getElementById("pauseTrack4").style.backgroundColor="#1CBB52";
@@ -63,6 +81,7 @@ function playAudio4() {
 } 
 
 function pauseAudio4() { 
+    stopSongs()
     document.getElementById("audio4").pause(); 
     document.getElementById("pauseTrack4").style.backgroundColor="green";
     document.getElementById("playTrack4").style.backgroundColor="#1CBB52";
@@ -71,6 +90,7 @@ function pauseAudio4() {
 } 
 
 function playAudio5() { 
+    stopSongs()
     document.getElementById("audio5").play(); 
     document.getElementById("playTrack5").style.backgroundColor="green";
     document.getElementById("pauseTrack5").style.backgroundColor="#1CBB52";
@@ -80,6 +100,7 @@ function playAudio5() {
 } 
 
 function pauseAudio5() { 
+    stopSongs()
     document.getElementById("audio5").pause(); 
     document.getElementById("pauseTrack5").style.backgroundColor="green";
     document.getElementById("playTrack5").style.backgroundColor="#1CBB52";
@@ -88,6 +109,7 @@ function pauseAudio5() {
 } 
 
 function playAudio6() { 
+    stopSongs()
     document.getElementById("audio6").play(); 
     document.getElementById("playTrack6").style.backgroundColor="green";
     document.getElementById("pauseTrack6").style.backgroundColor="#1CBB52";
@@ -97,6 +119,7 @@ function playAudio6() {
 } 
 
 function pauseAudio6() { 
+    stopSongs()
     document.getElementById("audio6").pause(); 
     document.getElementById("pauseTrack6").style.backgroundColor="green";
     document.getElementById("playTrack6").style.backgroundColor="#1CBB52";
@@ -105,6 +128,7 @@ function pauseAudio6() {
 } 
 
 function playAudio7() { 
+    stopSongs()
     document.getElementById("audio7").play(); 
     document.getElementById("playTrack7").style.backgroundColor="green";
     document.getElementById("pauseTrack7").style.backgroundColor="#1CBB52";
@@ -114,6 +138,7 @@ function playAudio7() {
 } 
 
 function pauseAudio7() { 
+    stopSongs()
     document.getElementById("audio7").pause(); 
     document.getElementById("pauseTrack7").style.backgroundColor="green";
     document.getElementById("playTrack7").style.backgroundColor="#1CBB52";
@@ -122,6 +147,7 @@ function pauseAudio7() {
 } 
 
 function playAudio8() { 
+    stopSongs()
     document.getElementById("audio8").play(); 
     document.getElementById("playTrack8").style.backgroundColor="green";
     document.getElementById("pauseTrack8").style.backgroundColor="#1CBB52";
@@ -131,6 +157,7 @@ function playAudio8() {
 } 
 
 function pauseAudio8() { 
+    stopSongs()
     document.getElementById("audio8").pause(); 
     document.getElementById("pauseTrack8").style.backgroundColor="green";
     document.getElementById("playTrack8").style.backgroundColor="#1CBB52";
@@ -139,6 +166,7 @@ function pauseAudio8() {
 } 
 
 function playAudio9() { 
+    stopSongs()
     document.getElementById("audio9").play(); 
     document.getElementById("playTrack9").style.backgroundColor="green";
     document.getElementById("pauseTrack9").style.backgroundColor="#1CBB52";
@@ -148,6 +176,7 @@ function playAudio9() {
 } 
 
 function pauseAudio9() { 
+    stopSongs()
     document.getElementById("audio9").pause(); 
     document.getElementById("pauseTrack9").style.backgroundColor="green";
     document.getElementById("playTrack9").style.backgroundColor="#1CBB52";

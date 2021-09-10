@@ -124,3 +124,89 @@ select:focus {
 #listItem:hover {
   color: #1fd662 !important;
 }
+
+#visit {
+  background-color: #ffffff;
+  text-align: center;
+  padding: 75px;
+}
+
+#visitTitle {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+#visitText {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 18px;
+  padding: 10px;
+}
+
+#visitButton {
+  background-color: #1fd662;
+  border: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 10px;
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+#visitButton:hover {
+  cursor: pointer;
+  width: 155px;
+  height: 53px;
+}
+
+#extra {
+  background-color: black;
+  color: white;
+  text-align: left;
+  padding: 50px 0 50px 0;
+}
+
+#navLogo2 {
+  width: 150px;
+}
+
+#social {
+  background-color: #222326;
+  padding: 10px;
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+#social:hover {
+  cursor: pointer;
+}
+
+#socialIcon:hover {
+  fill: #1fd662;
+}
+
+#grayTitle {
+  color: #919496;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-align: left;
+}
+
+#extraLink {
+  color: white;
+  padding: 0 0 16px 0;
+}
+
+#extraLink:hover {
+  cursor: pointer;
+  color: #1fd662;
+}

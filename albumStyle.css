@@ -1,4 +1,3 @@
-
 body {
     background-color: #121212;
 }
@@ -76,9 +75,7 @@ hr .borderless {
 }
 
 
-tr {
-    cursor: pointer;
-}
+
 
 tr:hover {
     background-color: darkslategray;
@@ -96,3 +93,88 @@ tr:hover {
     cursor: pointer;
 }
 
+
+#playTrack, #playTrack2, #playTrack3, #playTrack4, #playTrack5, #playTrack6, #playTrack7, #playTrack8, #playTrack9 {
+    background-color: #1CBB52;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+#trackIcon {
+    padding-bottom: 5px;
+}
+
+#pauseTrack, #pauseTrack2, #pauseTrack3, #pauseTrack4, #pauseTrack5, #pauseTrack6, #pauseTrack7, #pauseTrack8, #pauseTrack9 {
+    background-color: #1CBB52;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    display: inline-block;
+}
+
+#stopTrack {
+    background-color: #1CBB52;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+}
+
+
+#refresh:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart1, #heart2, #heart3, #heart4, #heart5, #heart6, #heart7, #heart8, #heart9 {
+    width: 25px;
+    height: 25px;
+}
+
+#heart1:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart2:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart3:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart4:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart5:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart6:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart7:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart8:hover {
+    cursor: pointer;
+    fill: white;
+}
+
+#heart9:hover {
+    cursor: pointer;
+    fill: white;
+}
